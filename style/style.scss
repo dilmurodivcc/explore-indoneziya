@@ -7,6 +7,10 @@
 $primary-color: #333;
 $secondary-color: #d32f2f;
 $indicator-color: #85a3b2;
+
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
