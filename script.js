@@ -1,7 +1,8 @@
 AOS.init();
 AOS.init({
-  duration: 1800,
+  duration: 1000,
 });
+
 const track = document.querySelector(".carousel-track");
 const slides = Array.from(track.children);
 const nextButton = document.querySelector(".next");

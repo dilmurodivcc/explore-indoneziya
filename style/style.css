@@ -4,22 +4,19 @@
   --third-family: "FontAwesome", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 .container {
   max-width: 1180px;
   margin: 0 auto;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 body {
@@ -69,7 +66,10 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+}
+
+.modal-backdrop {
+  position: static !important;
 }
 
 .header {
@@ -160,7 +160,7 @@ body {
   z-index: 10;
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 25px;
 }
 .header__btns .header__btns-menu {
   border: none;
@@ -537,12 +537,12 @@ h1 {
   pointer-events: none;
   z-index: 100;
 }
-.carousel-container .carousel-indicators {
+.carousel-container .carousel-indicatorss {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.carousel-container .carousel-indicators .indicator {
+.carousel-container .carousel-indicatorss .indicator {
   width: 15px;
   height: 15px;
   margin: 0 5px;
@@ -550,7 +550,7 @@ h1 {
   border-radius: 50%;
   cursor: pointer;
 }
-.carousel-container .carousel-indicators .indicator.active {
+.carousel-container .carousel-indicatorss .indicator.active {
   width: 30px;
   height: 15px;
   border-radius: 8px;
@@ -651,7 +651,7 @@ h1 {
   margin-left: 10px;
   margin-top: 100px;
 }
-.fivth .cards .card {
+.fivth .cards .card1 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1073,20 +1073,20 @@ footer p {
     flex-direction: column;
     margin: 50px 0 0 0 !important;
   }
-  .fivth .cards .card {
+  .fivth .cards .card1 {
     flex-direction: column;
   }
-  .fivth .cards .card .text {
+  .fivth .cards .card1 .text {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-  .fivth .cards .card img {
+  .fivth .cards .card1 img {
     width: 320px !important;
     height: 195px !important;
     align-items: center;
   }
-  .fivth .cards .card p {
+  .fivth .cards .card1 p {
     text-align: center;
   }
   .gallery-section .cnt {

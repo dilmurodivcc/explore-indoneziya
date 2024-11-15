@@ -21,9 +21,7 @@ html{
   margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
+
 body {
   overflow-x: hidden;
 }
@@ -70,7 +68,9 @@ body {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.2);
-  z-index: 1;
+}
+.modal-backdrop{
+  position: static !important;
 }
 .header {
   padding: 24px 70px 24px 24px;
@@ -160,7 +160,7 @@ body {
 
   align-items: center;
   justify-content: center;
-  gap: 45px;
+  gap: 25px;
   .header__btns-menu {
     border: none;
     z-index: 1000;
@@ -544,7 +544,7 @@ h1 {
     }
   }
 
-  .carousel-indicators {
+  .carousel-indicatorss {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -661,7 +661,7 @@ h1 {
   gap: 50px;
   margin-left: 10px;
   margin-top: 100px;
-  .card {
+  .card1 {
     display: flex;
     justify-content: center;
     align-items: center;
